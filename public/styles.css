@@ -2,6 +2,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Fira Code', monospace;
+  color: var(--text);
+  background: var(--bg);
+  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
 }
 
 ul {
@@ -18,7 +21,7 @@ a {
 
 header {
   padding: 1em;
-  background: gray;
+  background: var(--bg-nav);
   margin-bottom: 1em;
   padding-bottom: 3.5em;
   text-align: center;
@@ -43,6 +46,7 @@ img {
   padding: 1em;
   text-align: center;
   bottom: 0;
+  background: var(--bg-nav);
 }
 
 /* NAVBAR */
@@ -50,8 +54,8 @@ img {
 .navbar {
   height: 70px;
   width: 100%;
-  background: black;
-  color: white;
+  background: var(--bg-nav);
+  color: var(--text);
 }
 
 .navbar-nav {
@@ -106,7 +110,7 @@ img {
 /* ::before -> add content before the link text */
 .dropdown-item a::before {
   content: ' ';
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
   border-radius: 50%;
   width: 1.5rem;
   height: 1.5rem;
@@ -158,4 +162,16 @@ img {
   --gray4: #B16626;
   --gray5: #9E4216;
   --gray6: #751a06;
+}
+
+#light::before {
+  background: #ffffff;
+}
+
+#dark::before {
+  background: #2a2e35;
+}
+
+#solar::before {
+  background: var(--bg-solar);
 }
