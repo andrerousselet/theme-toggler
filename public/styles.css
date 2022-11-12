@@ -175,3 +175,14 @@ img {
 #solar::before {
   background: var(--bg-solar);
 }
+
+@media screen and (max-width: 576px) {
+  .dropdown {
+    transform: translate(-57%, -13%);
+    scale: calc(0.95);
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
