@@ -114,3 +114,19 @@ img {
   vertical-align: middle;
   margin-right: 10px;
 }
+
+/* Themes: */
+
+/* inside :root we define variables: static values */
+:root {
+  --gray0: #eeeded;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
+  --gold: goldenrod;
+  --light-gold: #f8eaab;
+  --dark-gold: #B16626;
+}
