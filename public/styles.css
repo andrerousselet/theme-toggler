@@ -178,7 +178,7 @@ img {
 
 @media screen and (max-width: 576px) {
   .dropdown {
-    transform: translate(-57%, -13%);
+    transform: translate(-56%, -13%);
     scale: calc(0.95);
   }
 
