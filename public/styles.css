@@ -176,10 +176,14 @@ img {
   background: var(--bg-solar);
 }
 
-@media screen and (max-width: 576px) {
+@media (max-width: 576px) {
   .dropdown {
     transform: translate(-57%, -13%);
     scale: calc(0.95);
+  }
+
+  .has-dropdown:active .dropdown {
+    opacity: 1;
   }
 
   .footer {
