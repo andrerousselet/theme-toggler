@@ -63,7 +63,7 @@ img {
   position: absolute;
   width: 360px;
   /* invisible until focused */
-  opacity: 1;
+  opacity: 0;
   /* z-index greater then parent element, so it appears on top of the navbar */
   z-index: 2;
   background: var(--bg-dropdown);
@@ -81,4 +81,14 @@ img {
 
   box-shadow: 0 0.175em 0.5em rgba(2, 8, 20, 0.1);
   transform: translate(-44%, -10%);
+
+  /* when something inside the dropddown is focused,
+  the transition here makes the opacity fade in and out when losing focus */
+  transition: opacity .15s ease-out;
+}
+
+/* detects when a link inside 'dropdown' has been focused */
+.has-dropdown:focus-within .dropdown {
+  opacity: 1;
+  pointer-events: auto;
 }
