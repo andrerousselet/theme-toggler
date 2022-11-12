@@ -130,3 +130,32 @@ img {
   --light-gold: #f8eaab;
   --dark-gold: #B16626;
 }
+
+.light {
+  --bg: var(--gray0);
+  --bg-nav: linear-gradient(to right, var(--gray1), var(--gray3));
+  --bg-dropdown: var(--gray0);
+  --text: var(--gray6);
+  --border-color: var(--gold);
+  --bg-solar: var(--dark-gold);
+}
+
+.dark {
+  --bg: var(--gray4);
+  --bg-nav: linear-gradient(to right, var(--gray3), var(--gray6));
+  --bg-dropdown: var(--gray3);
+  --text: var(--gray0);
+  --border-color: var(--gold);
+  --bg-solar: var(--light-gold);
+}
+
+/* here we overwrite the :root scale for the solarized options */
+.solar {
+  --gray0: #fffab4;
+  --gray1: #ECD155;
+  --gray2: #D8AD45;
+  --gray3: #C58A36;
+  --gray4: #B16626;
+  --gray5: #9E4216;
+  --gray6: #751a06;
+}
