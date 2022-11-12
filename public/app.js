@@ -12,3 +12,19 @@ darkButton.onclick = () => {
 lightButton.onclick = () => {
   body.classList.replace('dark', 'light');
 };
+
+solarButton.onclick = () => {
+  if (body.classList.contains('solar')) {
+    body.classList.remove('solar');
+    solarButton.style.cssText = `
+      --bg-solar: var(--dark-gold);
+    `
+    solarButton.innerText = 'SOLARIZE';
+  } else {
+    solarButton.style.cssText = `
+      --bg-solar: var(--light-gold);
+    `
+    body.classList.add('solar');
+    solarButton.innerText = 'NORMALIZE';
+  }
+};
