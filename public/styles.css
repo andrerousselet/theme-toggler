@@ -16,6 +16,14 @@ a {
   text-decoration: none;
 }
 
+header {
+  padding: 1em;
+  background: gray;
+  margin-bottom: 1em;
+  padding-bottom: 3.5em;
+  text-align: center;
+}
+
 main {
   height: 100%;
   padding: 2rem;
@@ -27,4 +35,50 @@ img {
   margin: 1em 0 0;
   width: 180px;
   height: 180px;
+}
+
+.footer {
+  padding: 1em;
+  text-align: center;
+  bottom: 0;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 70px;
+  width: 100%;
+  background: black;
+  color: white;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.dropdown {
+  position: absolute;
+  width: 360px;
+  /* invisible until focused */
+  opacity: 1;
+  /* z-index greater then parent element, so it appears on top of the navbar */
+  z-index: 2;
+  background: var(--bg-dropdown);
+  border-top: 2px solid var(--border-color);
+
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 3rem;
+  margin-top: 2rem;
+  padding: 0.5rem;
+
+  box-shadow: 0 0.175em 0.5em rgba(2, 8, 20, 0.1);
+  transform: translate(-44%, -10%);
 }
