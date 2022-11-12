@@ -178,6 +178,24 @@ img {
 
 @media screen and (max-width: 576px) {
   .dropdown {
+    position: absolute;
+    width: 360px;
+    opacity: 0;
+    z-index: 2;
+    background: var(--bg-dropdown);
+    border-top: 2px solid var(--border-color);
+  
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 3rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+  
+    box-shadow: 0 0.175em 0.5em rgba(2, 8, 20, 0.1);
     transform: translate(-57%, -13%);
     scale: calc(0.95);
   }
